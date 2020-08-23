@@ -1,0 +1,67 @@
+----------- HTML -------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML AND CSS LEARNING</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--       NAVBAR         -->
+        <div class="topnav">
+            <a class="button" href="../index.html">Home</a>
+            <a class="logo">html and css projects</a>
+        </div>
+        <!--     END NAVBAR       -->
+    </body>
+</html>
+
+
+
+-------- CSS ------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+
+
+}
+
+body {
+    margin: 0;  
+    font-family: 'Roboto', sans-serif;
+    background: #222;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.button {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.logo {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+

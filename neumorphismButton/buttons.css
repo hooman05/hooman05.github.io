@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    -webkit-user-select: none;
+}
+
+body {
+    margin: 0;  
+    font-family: 'Roboto', sans-serif;
+    background: #222222;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.button {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.logo {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    flex-direction: column;
+}
+
+.click {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: white;
+
+    border-radius: 40px;
+    box-shadow:  17px 17px 43px #121212, 
+                -17px -17px 43px #323232;
+                
+}
+
+.click:hover {
+    box-shadow: inset 17px 17px 43px #121212, 
+                inset -17px -17px 43px #323232;
+
+}

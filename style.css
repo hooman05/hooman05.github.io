@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+/* NAVBAR START */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+
+
+}
+
+body {
+    margin: 0;  
+    font-family: 'Roboto', sans-serif;
+    background: #222;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.button {
+    float: right;
+    background: #4CAF50;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.logo {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.click {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 5px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #0162c8, #014185);
+}
+
+.click:hover {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 5px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #010ec8, #190185); 
+}
+
