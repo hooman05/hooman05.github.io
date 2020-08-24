@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Decentralized Chat</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://chr15m.github.io/bugout/bugout.min.js" type="application/javascript"></script>
+        <script>
+          function log(message) {
+            document.getElementById("log").textContent += message + "\n";
+          }
+        </script>
+    </head>
+    <body>
+        <!--       NAVBAR         -->
+        <div class="topnav">
+            <a class="button" href="../">Home</a>
+            <a class="logo">html and css projects | BUGOUT</a>
+        </div>
+        <!--     END NAVBAR       -->
+        
+        <pre id="log"></pre>
+        <pre id="input" contenteditable="true"></pre>
+    </body>
+    <script>
+        log("this is a decentralised chat. no user setup is required.");
+        log("this was created with bugout. go to the creators page at");
+        log("           https://chr15m.github.io/bugout/             ");
+        log(" ------------------------------------------------------ ");
+
+        var b = Bugout("bugout-chat-tutorial");
+        b.on("seen", function(address) { log(address + " [ seen ]"); });
+        b.on("message", function(address, message) {
+            log(address + ": " + message);
+        });
+
+        log(b.address() + " [ me ]");
+
+        document.getElementById("input").onkeydown = function(ev) {
+            if (ev.keyCode == 13) {
+                if (b.lastwirecount) {
+                    b.send(ev.target.textContent);
+                    ev.target.textContent = "";
+                }
+                ev.preventDefault();
+            }
+        }
+    </script>
+</html>
