@@ -3,6 +3,13 @@
     <head>
         <title>HTML AND CSS LEARNING</title>
         <link rel="stylesheet" href="style.css">
+
+        <script>
+            function submit() {
+                document.getElementById('a').value='';
+                document.getElementById('b').value='';
+            }
+        </script>
     </head>
     <body>
         <!--       NAVBAR         -->
@@ -12,6 +19,27 @@
         </div>
         <!--     END NAVBAR       -->
 
-        <h1>COMMING SOON</h1>
+        <div class="project">
+            <div class="form">
+                <h2>login</h2>
+                <div class="input">
+                    <div class="inputBox">
+                        <label>Username</label>
+                        <input class="inp" value="" id="a" type="text" name="" placeholder="username">
+                    </div>
+
+                    <div class="inputBox">
+                        <label>Password</label>
+                        <input class="inp" value="" id="b" type="password" name="" placeholder="Password">
+                    </div>
+
+                    <div class="inputBox">
+                        <input class="sin" type="submit" name="" value="Sign in" onclick="submit()">
+                    </div>
+                    <p class="forgot">Forgot Password? <a class="link1" href="forgotpw.html">Click Here</a></p>
+                    <p class="forgot1">No account, create one<a class="link1" href="forgotpw.html" >here</a></p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto;
-
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    -webkit-user-select: none;
 }
 
 body {
@@ -49,4 +49,123 @@ h1 {
     justify-content: center;
     padding-top: 100px;
     color: white;
+}
+
+.here {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* project start */
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.form {
+    font-weight: 700;
+    border-radius: 20px;
+
+    position: relative;
+    width: 350px;
+    padding: 40px 40px 60px;
+
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, .05),
+                 5px  5px 15px rgba(0, 0, 0, .5);
+}
+
+.form h2 {
+    display: flex;
+    color: #c7c7c7;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    justify-content: center;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, .05),
+    5px  5px 15px rgba(0, 0, 0, .5);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.form .input {
+    font-weight: 700;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.form .input .inputBox {
+    margin-top: 20px;
+}
+
+.form .input .inputBox label {
+    display: block;
+    color: #868686;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form .input .inputBox .inp {
+    font-weight: 100;
+
+    color: #30a9f4;
+    text-transform: none;
+    width: 100%;
+    background: #222;
+    border: 2px solid #222;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, .05),
+                5px  5px 15px rgba(0, 0, 0, .5),
+                inset -5px -5px 10px rgba(255, 255, 255, .05),
+                inset 5px 5px 15px rgba(0, 0, 0, .5);
+}
+
+.form .input .inputBox .sin {
+    color: #868686;
+    width: 100%;
+    background: #222;
+    border: 2px solid #222;
+    font-size: 20px;
+    outline: none;
+    border-radius: 40px;
+    padding: 15px 15px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, .05),
+                5px  5px 15px rgba(0, 0, 0, .5);
+}
+
+.form .input .inputBox .sin:hover {
+    color: #868686;
+    width: 100%;
+    background: #222;
+    border: 2px solid #222;
+    outline: none;
+    border-radius: 40px;
+    padding: 15px 15px;
+    box-shadow: inset -5px -5px 10px rgba(255, 255, 255, .05),
+                inset 5px 5px 15px rgba(0, 0, 0, .5);
+}
+
+.forgot {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: #555;
+}
+.forgot1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #555;
+}
+
+.link1 {
+    margin-left: 5px;
+    text-decoration: none;
+    color: #ff0047;
 }
